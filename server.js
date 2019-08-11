@@ -1,11 +1,13 @@
 const express = require('express')
 const cheerio = require('cheerio');
 const axios = require('axios');
+const cors = require('cors');
 
 const url = 'https://github.com/frontendistanbul/technologies/blob/master/README.md';
-
-const app = express()
 const PORT = process.env.PORT || 3000;
+
+const app = express();
+app.use(cors());
 
 app.get('/', (req, res) => {
 
