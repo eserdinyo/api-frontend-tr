@@ -5,7 +5,7 @@ const axios = require('axios');
 const url = 'https://github.com/frontendistanbul/technologies/blob/master/README.md';
 
 const app = express()
-const port = process.env.PORT || 8081;
+const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
 
