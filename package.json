@@ -7,7 +7,6 @@
     "node": "10.15.3"
   },
   "scripts": {
-    "postinstall": "npm run start",
     "start": "node server.js"
   },
   "keywords": [],
